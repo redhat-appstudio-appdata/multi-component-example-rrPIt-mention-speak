@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-node-sample-multi-component-example
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads/rorai-tenant/multi-component-example/devfile-node-sample-multi-component-example@sha256:c4e5d22b71e8371bd30a25dd77f4a5a94e6104837319c258c6b806273427fe9b
         name: my-nodejs
         ports:
         - containerPort: 3001
