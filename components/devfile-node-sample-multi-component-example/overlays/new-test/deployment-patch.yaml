@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-node-sample-multi-component-example
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rorai-tenant/multi-component-example/devfile-node-sample-multi-component-example@sha256:c4e5d22b71e8371bd30a25dd77f4a5a94e6104837319c258c6b806273427fe9b
+        name: my-nodejs
+        resources: {}
+status: {}
